@@ -12,6 +12,30 @@
         th, td {
             padding: 5px;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 <body>
@@ -19,18 +43,23 @@
         <h1>Week two website assignment</h1>
         <nav>
             <a href="#">Home</a>
-            <a href="a1.html">Assignments</a>
+            <div class="dropdown">
+                <a href="#">Assignments</a>
+                <div class="dropdown-content">
+                    <a href="a1.html">Assignment 1</a>
+                    <a href="#">Assignment 2</a>
+                    <a href="#">Assignment 3</a>
+                </div>
+            </div>
             <a href="abt.html">About me</a>
             <a href="form.html">Form</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-
     <main>
         <article id="about">
             <p>This is my second year at Bushnell University.</p>
         </article>
-
         <article id="siblings">
             <p>My siblings are:</p>
             <ul>
@@ -40,14 +69,11 @@
                 <li>Gabe</li>
             </ul>
         </article>
-
         <aside id="reference">
             <p><a href="https://www.w3schools.com/">I used w3schools as a reference</a></p>
         </aside>
-
         <img src="BU.jpg" alt="BU Logo">
         <hr>
-
         <table>
             <tr>
                 <th>1</th>
@@ -66,7 +92,6 @@
             </tr>
         </table>
     </main>
-
     <footer>
         <p>&copy; 2024 Isaac</p>
     </footer>
