@@ -1,0 +1,51 @@
+html{
+
+}
+
+body { text-align: center; 
+
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.navbar a{
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar a:hover{
+    background-color: rgb(255, 255, 255);
+    border: #089352;
+    border-style: solid;
+
+}
+
+.navbar li{
+    
+}
+
+body header{
+    border-style: solid;
+
+
+}
+
+footer{
+
+    border-style: solid;
+}
