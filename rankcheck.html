@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocket League Rank Checker</title>
+  <link rel="stylesheet" href="stylesrl.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="sticky-nav">
+    <div class="nav-content">
+      <div class="logo">RL Optimizer</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="header-content">
+      <h1>Rocket League</h1>
+      <span class="subtitle">Rank Optimizer</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="instructions">
+      <h2>How to Use This Tool</h2>
+      <ol>
+        <li>Select your game mode (1v1 or 2v2)</li>
+        <li>Choose your current rank</li>
+        <li>Select your desired rank</li>
+        <li>Click submit</li>
+      </ol>
+
+      <div class="tips-section">
+        <h3>General Tips:</h3>
+        <ul>
+          <li>Watch high level players</li>
+          <li>Sleep and eat well</li>
+          <li>Try to get good at one specific mechanic</li>
+          <li>Take breaks</li>
+        </ul>
+      </div>
+    </div>
+
+    <form id="rank-form">
+      <label for="mode">Select Mode:</label>
+      <select id="mode" name="mode" required>
+        <option value="" disabled selected>Select Gamemode</option>
+        <option value="1v1">1v1</option>
+        <option value="2v2">2v2</option>
+      </select>
+      
+      <label for="currentRank">Select Current Rank:</label>
+      <select id="currentRank" name="currentRank" required>
+        <option value="" disabled selected>Select Current Rank</option>
+        <option value="bronze1">Bronze 1</option>
+        <option value="bronze2">Bronze 2</option>
+        <option value="bronze3">Bronze 3</option>
+        <option value="silver1">Silver 1</option>
+        <option value="silver2">Silver 2</option>
+        <option value="silver3">Silver 3</option>
+        <option value="gold1">Gold 1</option>
+        <option value="gold2">Gold 2</option>
+        <option value="gold3">Gold 3</option>
+        <option value="platinum1">Platinum 1</option>
+        <option value="platinum2">Platinum 2</option>
+        <option value="platinum3">Platinum 3</option>
+        <option value="diamond1">Diamond 1</option>
+        <option value="diamond2">Diamond 2</option>
+        <option value="diamond3">Diamond 3</option>
+        <option value="champion1">Champion 1</option>
+        <option value="champion2">Champion 2</option>
+        <option value="champion3">Champion 3</option>
+        <option value="grandchampion1">Grand Champion 1</option>
+        <option value="grandchampion2">Grand Champion 2</option>
+        <option value="grandchampion3">Grand Champion 3</option>
+        <option value="ssl">Supersonic Legend</option>
+      </select>
+
+      <label for="desiredRank">Select Desired Rank:</label>
+      <select id="desiredRank" name="desiredRank" required>
+        <option value="" disabled selected>Select Desired Rank</option>
+        <option value="bronze1">Bronze 1</option>
+        <option value="bronze2">Bronze 2</option>
+        <option value="bronze3">Bronze 3</option>
+        <option value="silver1">Silver 1</option>
+        <option value="silver2">Silver 2</option>
+        <option value="silver3">Silver 3</option>
+        <option value="gold1">Gold 1</option>
+        <option value="gold2">Gold 2</option>
+        <option value="gold3">Gold 3</option>
+        <option value="platinum1">Platinum 1</option>
+        <option value="platinum2">Platinum 2</option>
+        <option value="platinum3">Platinum 3</option>
+        <option value="diamond1">Diamond 1</option>
+        <option value="diamond2">Diamond 2</option>
+        <option value="diamond3">Diamond 3</option>
+        <option value="champion1">Champion 1</option>
+        <option value="champion2">Champion 2</option>
+        <option value="champion3">Champion 3</option>
+        <option value="grandchampion1">Grand Champion 1</option>
+        <option value="grandchampion2">Grand Champion 2</option>
+        <option value="grandchampion3">Grand Champion 3</option>
+        <option value="ssl">Supersonic Legend</option>
+      </select>
+
+      <button type="submit">Go</button>
+    </form>
+    
+    <div id="recommendations"></div>
+  </div>
+</body>
+</html>
