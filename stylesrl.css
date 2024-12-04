@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -35,30 +36,38 @@ body {
   color: white;
 }
 
-.instructions {
-  background-color: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
 .tips-section {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 2px solid #ddd;
+  margin-top: 30px;
 }
 
-.form-select, .btn {
-  padding: 0.8rem;
-  border-radius: 4px;
+.tips-section h2 {
+  font-size: 2.5rem;
+  color: #333;
 }
 
-#recommendations {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  display: none;
+.tips-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tips-section li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.video-section h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.video-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.video-section .btn-info {
+  background-color: #00b4d8;
+  color: white;
 }
 
 footer {
@@ -83,7 +92,11 @@ footer a:hover {
     font-size: 1.5rem;
   }
 
-  .form-select {
-    font-size: 1rem;
+  .tips-section h2 {
+    font-size: 2rem;
+  }
+
+  .video-section h3 {
+    font-size: 1.5rem;
   }
 }
