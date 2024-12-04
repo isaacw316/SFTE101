@@ -1,13 +1,24 @@
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f0f2f5;
 }
 
+.navbar {
+  background-color: #343a40;
+}
+
 .navbar-brand {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
+  color: #00b4d8 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
   color: #00b4d8 !important;
 }
 
@@ -36,42 +47,62 @@ body {
   color: white;
 }
 
-.tips-section {
-  margin-top: 30px;
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.centered-text {
+  text-align: center;
+  margin-top: 20px; 
+  font-size: 2rem; 
+  color: #333; 
 }
 
-.tips-section h2 {
-  font-size: 2.5rem;
-  color: #333;
+.video-container iframe {
+  max-width: 100%;
+  width: 560px; 
+  height: 315px; 
 }
 
-.tips-section ul {
+.container {
+  margin-top: 50px;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  padding: 30px;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2,
+.container h3 {
+  color: #00b4d8;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-.tips-section li {
+ul li {
   font-size: 1.2rem;
   margin: 15px 0;
+  color: #dddddd;
 }
 
-.video-section h3 {
-  font-size: 2rem;
-  margin-top: 30px;
-}
-
-.video-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.video-section .btn-info {
-  background-color: #00b4d8;
-  color: white;
+ul li strong {
+  color: #00b4d8;
 }
 
 footer {
+  background-color: #343a40;
   color: #cccccc;
+  padding: 30px 0;
 }
 
 footer a {
@@ -92,11 +123,60 @@ footer a:hover {
     font-size: 1.5rem;
   }
 
-  .tips-section h2 {
-    font-size: 2rem;
-  }
-
-  .video-section h3 {
+  .container h2,
+  .container h3 {
     font-size: 1.5rem;
   }
+
+  ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.slide p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+  gap: 15px;
+}
+
+.slideshow .slide {
+  flex: 0 0 30%;
+  padding: 15px;
+  background: #f0f2f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow .slide p {
+  font-size: 1rem;
+  color: #555;
 }
