@@ -12,6 +12,10 @@ body {
   background-color: #343a40;
 }
 
+.instructions {
+  color: #00b4d8; 
+}
+
 .navbar-brand {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
